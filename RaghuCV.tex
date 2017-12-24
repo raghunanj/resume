@@ -1,0 +1,168 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://raghunanj.github.io/}{\Large Raghunandana Jayarama Reddy}} & Email : \href{mailto:rjayaramared@cs.stonybrook.edu}{rjayaramared@cs.stonybrook.edu}\\
+  \href{http://github.com/raghunanj/}{http://github.com/raghunanj} & Mobile : +1-(631)590-9685 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stony Brook University State University of New York}{Stonybrook, NY}
+      {Master of Science in Computer Science;   }{Aug. 2017 -- (expected) Dec. 2018}
+\begin{itemize}
+\item Coursework: Analysis of Algorithms, Computer Vision, Operating Systems, Network Security.
+\end{itemize}
+    \resumeSubheading
+      {PES Institute of Technology}{Bengaluru, India}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.57 (8.93/10.0)}{Aug. 2011 -- July. 2015}
+      \begin{itemize}
+\item Coursework: Analysis and Design of Algorithms, Computer Networks, Unix Programming, Fuzzy logic, Compiler Design, Principles of Programming Languages, Computer Networks, Database systems. 
+\end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{:  Python, C, Java, SQL, JavaScript }
+      \hfill
+      \textbf{Technologies}{: AWS, Tensor-flow, OpenCV, Git, Matlab }
+    }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Juniper Networks Inc }{Bengaluru, India}
+      {Member of Technical Staff 2}{Jul 2015 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{IGNITION}
+          { Application development for a SaaS platform release for data management   \& helped redesign the backend development with query handling and scaled down the performance factor by atleast 40\% in response time for the end user. }
+        \resumeItem{VESPER  }
+          { Helped design and develop the enhancements for VESPER, a data cleansing initiative. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Juniper Networks Inc}{ Bengaluru, India}
+      {Co-op Internship}{Jan 2015 - Jun 2015}
+      \resumeItemListStart
+        \resumeItem{IGNITION} { Designed and developed the automation scenarios for few End-to-End tasks while reducing human efforts and ensured that the performance and optimality of the designed solution are meeting a logical end by building a simulator}  
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IIT Guwahati }{Guwahati India}
+      {Research Intern}{Summer 2014}
+      \resumeItemListStart
+        \resumeItem{Coverage Area Optimization}
+          {Indian Academy of Sciences' research fellowship advised by Dr. Partha Sarathi Mandal for work on Coverage Hole Minimization area in wireless sensor networks(WSNs).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{SBUnix }
+      {A 64-bit OS with a shell, terminal, I/O, interrupt handling and binaries support.}
+    \resumeSubItem{Plugboard Proxy tool}
+      {a plugboard proxy for adding an extra layer of protection to publicly accessible network services.}
+    \resumeSubItem{Merging EventShop and AsterixDB}
+      {Fused EventShop - an OpenSource query processing application and AsterixDB, an OpenSource Big Data Management System. Demonstrated that the scale, diversity and complexity of data generated by EventShop can be handled optimally by AsterixDB compared to a traditional RDBMS.}
+    \resumeSubItem{DNS Packet injector tool}
+      {An on-path DNS packet injector and a passive DNS poisoning attack detector.} 	\resumeSubItem{Big Data parallelization using GPU}
+      {Parallelized the mahout K-Means clustering algorithm to run it on a GPU system and Used aparapi library to convert java bytecode to opencl and wrote our own api in Jcuda to invoke the GPU kernel code.}
+  \resumeSubHeadingListEnd
+
+
+
+%--------AWARDS&HONORS------------
+\section{Awards \& Honors}
+  \resumeSubHeadingListStart
+    \item {Received the MHRD merit scholarship by the Ministry of HRD, India during 2011-2015.}
+\item {Distinction award in the years 2013,2014,2015 at PES Institute of Technology.} 
+\item {Incredible Talent Team award in 2016-2017 at Juniper Networks Inc India.}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
