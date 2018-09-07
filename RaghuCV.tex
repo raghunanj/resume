@@ -15,7 +15,10 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{fontawesome}
 
+%%
+%%
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -67,101 +70,115 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%https://www.overleaf.com/12940811gwwnrnjkzqtq#%%%%%%%%%%%%%
 
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://github.com/raghunanj/}{\Large Raghunandana Jayarama Reddy}} & Email : \href{mailto:rjayaramared@cs.stonybrook.edu}{rjayaramared@cs.stonybrook.edu}\\
-  \href{https://raghunanj.github.io/}{https://raghunanj.github.io/} & Mobile : +1-(631)590-9685 \\
+  \textbf{\href{http://github.com/raghunanj/}{\Large Raghunandana Jayarama Reddy}} & \Email \href{mailto:kothvariraghu@gmail.com}{ kothvariraghu@gmail.com}\\
+  \textbf{\href{http://www.raghunanj.com/}{http://www.raghunanj.com/}} & \Mobilefone{ +1-(631)590-9685} \\
 \end{tabular*}
+
+%
+%-----------EXPERIENCE-----------------
+\section{Experience \hfill \faLinkedin \href {https://www.linkedin.com/in/raghunanj/}{ raghunanj}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Juniper Networks Inc }{Sunnyvale, CA}
+      {Software Engineer Intern, Enterprise Data Platform}{May 2018 - present}
+      \resumeItemListStart
+      \resumeItem{Data Integration Process}
+      {Writing backend code for transformation, aggregation and co-relation of data(ETL) between the data store(snowflake), Storage(AWS S3) and the Analytics layer(AWS EMR Spark).}
+      \resumeItem{Predictive Analytics model}
+      {Developing a predictive analytics model for forecasting the sales revenue data on the EMR Spark cluster using Spark MLib framework, fbProphet \& Apache Zeppelin for visualization.\textbf{\href{https://www.dropbox.com/s/3w3qwmne5uv8epf/FinalPosterRaghu.pdf?dl=0}{(Poster)} }}
+      \resumeItemListEnd
+  
+
+    \resumeSubheading
+      {Juniper Networks Inc }{Bengaluru, India}
+      {Software Engineer 2, Internal Core Apps - Platform}{Jul 2015 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{Ignition}
+          { I did the application development for a SaaS platform release for data management   \& redesigned it\'s backend development with query handling and scaled down the performance factor for the end user. }
+        \resumeItem{Vesper}
+          {I contributed to the design \& developed the enhancements for VESPER, a data cleansing initiative. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Juniper Networks Inc}{ Bengaluru, India}
+      {Software Engineer Intern, IT Applications management}{Jan 2015 - Jun 2015}
+      \resumeItemListStart
+        \resumeItem{Ignition} { I designed and developed the automation suite for few End-to-End tasks and ensured that the performance and optimality of the designed solution are meeting a logical end by building a simulator.}  
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+  
+  %--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+%   \resumeSubHeadingListStart
+    
+      \textbf{Languages}{:  Python, C, C++, Java, MySQL, JavaScript, Go, Scala. } \hfill \textbf{OS}{: OSX, Linux, FreeBSD, Windows}
+      
+      \textbf{Infrastructure/Platform}{: AWS, Git, Spark, Hadoop, Cassandra, Docker, Snowflake, Kafka, Druid, Zeppelin. }
+       
+       \textbf{Technologies}{: OpenCV, SkLearn, Pandas, Scipy, Keras, Tensor-flow, PyTorch, PySpark }
+    
+%   \resumeSubHeadingListEnd
+
 
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Stony Brook University State University of New York}{Stonybrook, NY}
+      {Stony Brook University, State University of New York}{Stonybrook, NY}
       {Master of Science in Computer Science;   }{Aug. 2017 -- (expected) Dec. 2018}
 \begin{itemize}
-\item Coursework: Analysis of Algorithms, Computer Vision, Operating Systems, Network Security, Computational Geometry, Probability \& Statistics for Data Science, Convex Optimization.
+\item Coursework: Analysis of Algorithms,  Operating Systems, Network Security, Probability \& Statistics for Data Science, Computer Vision, Convex Optimization, Asynchronous distributed systems.
 \end{itemize}
     \resumeSubheading
       {PES Institute of Technology}{Bengaluru, India}
-      {Bachelor of Engineering in Computer Science;  GPA: 3.57 (8.93/10.0)}{Aug. 2011 -- July. 2015}
+      {Bachelor of Engineering in Computer Science;  GPA: 8.93/10.0}{Aug. 2011 -- July. 2015}
       \begin{itemize}
 \item Coursework: Analysis and Design of Algorithms, Computer Networks, Unix Programming, Fuzzy logic, Compiler Design, Principles of Programming Languages, Intro to Web Technologies, Database systems. 
 \end{itemize}
   \resumeSubHeadingListEnd
 
 
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{:  Python, C, Java, SQL, JavaScript. }
-      \hfill
-      \textbf{Technologies}{: AWS, Tensor-flow, OpenCV, Git, Matlab. }
-    }
-  \resumeSubHeadingListEnd
 
 
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Juniper Networks Inc }{Bengaluru, India}
-      {Member of Technical Staff 2}{Jul 2015 - Jun 2017}
-      \resumeItemListStart
-        \resumeItem{IGNITION}
-          { Application development for a SaaS platform release for data management   \& helped redesign the backend development with query handling and scaled down the performance factor by atleast 40\% in response time for the end user. }
-        \resumeItem{VESPER  }
-          { Helped design and develop the enhancements for VESPER, a data cleansing initiative. }
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Juniper Networks Inc}{ Bengaluru, India}
-      {Co-op Internship}{Jan 2015 - Jun 2015}
-      \resumeItemListStart
-        \resumeItem{IGNITION} { Designed and developed the automation scenarios for few End-to-End tasks while reducing human efforts and ensured that the performance and optimality of the designed solution are meeting a logical end by building a simulator.}  
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {IIT Guwahati }{Guwahati India}
-      {Research Intern}{Summer 2014}
-      \resumeItemListStart
-        \resumeItem{Coverage Area Optimization}
-          {Indian Academy of Sciences' research fellowship advised by Dr. Partha Sarathi Mandal for work on Coverage Hole Minimization area in wireless sensor networks(WSNs).}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
-\section{Selected Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{SBUnix }
-      {A 64-bit OS with a shell, terminal, I/O, interrupt handling and binaries support.}
-     \resumeSubItem{Plugboard Proxy tool}
-      {A plugboard proxy for adding an extra layer of protection to publicly accessible network services.} 
-    \resumeSubItem{DNS Packet injector tool}
-      {An on-path DNS packet injector and a passive DNS poisoning attack detector.}
-    \resumeSubItem {VisionMetrics}{An archive of code and projects involving Blending, Image Alignment, Detection \& Tracking, Segmentation \& Structured light.}
-    \resumeSubItem{Merging EventShop and AsterixDB}
-      {Fused EventShop - an OpenSource query processing application and AsterixDB, an OpenSource Big Data Management System. Demonstrated that the scale, diversity and complexity of data generated by EventShop can be handled optimally by AsterixDB compared to a traditional RDBMS.}
-      \resumeSubItem{Big Data parallelization using GPU}
-      {Parallelized the mahout K-Means clustering algorithm to run it on a GPU system and Used aparapi library to convert java bytecode to opencl and wrote our own api in Jcuda to invoke the GPU kernel code.} 
+\section{Selected projects \hfill \textbf{\href{https://github.com/raghunanj/}{https://github.com/raghunanj/}}}
+  \resumeSubHeadingListStart  
+      \resumeSubItem{SBUnix}{A 64 bit OS with shell, tarfs, COW fork, virtual memory, syscalls and binaries support.  } 
+      \resumeSubItem {\textbf {\href{https://github.com/raghunanj/ComputerVisionBasics}{VisionMetrics}}}{An archive of code and projects involving Blending, Image Alignment, Detection \& Tracking, \textbf{\href{https://www.youtube.com/watch?v=39CRobb2uGQ}{Segmentation }}\& Structured light.}
+  \resumeSubItem{Cross-Modality Convolution for 3D Biomedical Segmentation}
+      {A deep encoder-decoder structure with cross-modality convolution layers to incorporate different modalities of MRI data implemented using convolution LSTMs in Tensorflow.} 
+      \resumeSubItem{NetSec tools}
+      {A plugboard proxy for adding an extra layer of protection to publicly accessible network services and an on-path DNS packet injector and a passive DNS poisoning attack detector.}
+      \resumeSubItem{Extending serialization protocols}{\textbf{Google Summer of Code } participant worked with the Apache Dubbo community in extending the serialization protocols using protobuf. }
+      
+   
+
+       \resumeSubItem{Blogger Android app}
+      {Developed a blogger andorid app for users to categorize their favorite blog articles based on their interests.}
+     
+   
+      
+     
   \resumeSubHeadingListEnd
 
 
 
 %--------AWARDS&HONORS------------
-\section{Awards \& Honors}  
+\section{AWARDS \& HONORS}  
 \begin{itemize}[noitemsep]
-\item {Recipient of the MHRD merit scholarship by the Ministry of HRD, India during 2011-2015.}
-\item {Distinction award in the years 2013,2014,2015 at PES Institute of Technology.}
+
 \item {Incredible Talent Team award in 2016-2017 at Juniper Networks Inc India.}
 \item {1st Runner Up in the Intuit Android hackathon and an active participant in hackathons. }
 \end{itemize}
